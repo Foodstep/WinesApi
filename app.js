@@ -30,7 +30,7 @@ app.get('/test', function (req, res) {
 app.get('/details', function (req, res) {
     let wineId = req.query.id;
     let wine = wines.find(element => element.id == wineId);
-    console.log(req.query)
-    console.log(wine)
+    // console.log(req.query)
+    // console.log(wine)
     res.send(wine)
 })
